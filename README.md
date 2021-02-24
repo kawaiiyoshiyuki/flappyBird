@@ -11,4 +11,5 @@ source myenv/bin/activate
 (myenv) user@pc myenv %
 ```bash
 pip install pygame
+./flappy.py
 ```
