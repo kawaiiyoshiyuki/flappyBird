@@ -54,7 +54,7 @@ def score_display(game_state):
         score_rect = score_surface.get_rect(center = (144,50))
         screen.blit(score_surface, score_rect)
 
-        high_score_surface = game_font.render(f'Highest Score: {int(high_score)}', True, (255, 255, 255))
+        high_score_surface = game_font.render(f'High Score: {int(high_score)}', True, (255, 255, 255))
         high_score_rect = high_score_surface.get_rect(center = (144,425))
         screen.blit(high_score_surface, high_score_rect)
 
@@ -70,8 +70,8 @@ pygame.init()
 screen = pygame.display.set_mode((288,512))
 # screen = pygame.display.set_mode((600,1100))
 clock = pygame.time.Clock()
-# game_font = pygame.font.Font('04B_19.ttf', 40)
-game_font = pygame.font.Font(None,40)
+game_font = pygame.font.Font('04B_19.TTF', 40)
+# game_font = pygame.font.Font(None,40)
 
 gravity = 0.25
 bird_movement = 0
